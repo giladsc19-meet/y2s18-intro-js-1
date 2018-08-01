@@ -14,8 +14,32 @@ function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
+var x=prompt("try creating a palindrome")
+ function isPalindrome(x){
+	for (var i=0;i<x.length;i++){
+		if(x[i]==-1){
+			x.replace(x[i],"")
+		}
+	}
+	for (var i=0; i<x.length/2; i++){
+		console.log(x[i] + " : " + x[x.length-1-i])
+		if (x[i]==x[x.length-1-i]){		
+		}
+		else{
+			return false;
+		}
+	}
+	return true;
+}
+if (isPalindrome(x)){
+	alert("it is a palindrome")
+}
+else{
+	alert("noooooo!!!!!!")
+}
 
-// Write your isPalindrome function here!
+
+
 
     </script>
 </body>
